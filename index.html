@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beaver Capitalist</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Beaver Capitalist</h1>
+            <p>Build your beaver empire in a post-apocalyptic world!</p>
+            <div class="stats">
+                <span>Wood: <span id="wood-count">0</span></span>
+                <span>Stone: <span id="stone-count">0</span></span>
+                <span>Metal: <span id="metal-count">0</span></span>
+                <span>Dam Power: <span id="dam-power">0</span></span>
+            </div>
+        </header>
+
+        <section class="resources">
+            <div class="resource">
+                <h2>Wood: <span id="wood-count-display">0</span></h2>
+                <button id="wood-button">Cut Wood (+1 Wood/sec)</button>
+            </div>
+            <div class="resource">
+                <h2>Stone: <span id="stone-count-display">0</span></h2>
+                <button id="stone-button">Mine Stone (+0.5 Stone/sec)</button>
+            </div>
+            <div class="resource">
+                <h2>Metal: <span id="metal-count-display">0</span></h2>
+                <button id="metal-button">Extract Metal (+0.2 Metal/sec)</button>
+            </div>
+            <div class="resource">
+                <h2>Dam Power: <span id="dam-power-display">0</span></h2>
+                <button id="dam-button">Upgrade Dam (Cost: 50 Wood)</button>
+            </div>
+        </section>
+
+        <section class="upgrades">
+            <h2>Upgrades</h2>
+            <div class="upgrade">
+                <p>Beaver Lumberjacks (+5 Wood/sec) <span class="upgrade-count">x0</span></p>
+                <button id="upgrade-lumberjack">Purchase (Cost: 100 Wood)</button>
+            </div>
+            <div class="upgrade">
+                <p>Stone Miners (+2 Stone/sec) <span class="upgrade-count">x0</span></p>
+                <button id="upgrade-stoneminer">Purchase (Cost: 150 Wood)</button>
+            </div>
+            <div class="upgrade">
+                <p>Metal Extractors (+1 Metal/sec) <span class="upgrade-count">x0</span></p>
+                <button id="upgrade-metalextractor">Purchase (Cost: 200 Wood)</button>
+            </div>
+            <div class="upgrade">
+                <p>Automated Dams (+10 Dam Power/sec) <span class="upgrade-count">x0</span></p>
+                <button id="upgrade-automated-dams">Purchase (Cost: 300 Wood)</button>
+            </div>
+        </section>
+
+        <section class="achievements">
+            <h2>Achievements</h2>
+            <ul>
+                <li id="ach-wood50">💎 Gathered 50 Wood</li>
+                <li id="ach-stone30">🪨 Mined 30 Stone</li>
+                <li id="ach-metal10">🔩 Extracted 10 Metal</li>
+                <li id="ach-dam1">🏗️ Upgraded Dam Once</li>
+                <li id="ach-lumberjack1">👷‍♂️ Purchased Beaver Lumberjacks</li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Beaver Capitalist. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

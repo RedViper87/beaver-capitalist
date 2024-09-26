@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #2F4F4F;
+  color: #F5F5F5; }
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px; }
+
+header {
+  text-align: center;
+  margin-bottom: 30px; }
+  header h1 {
+    margin-bottom: 10px;
+    color: #6B8E23; }
+  header p {
+    font-size: 1.2em; }
+  header .stats {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px; }
+    header .stats span {
+      font-weight: bold; }
+
+.resources, .upgrades, .achievements {
+  margin-bottom: 30px; }
+  .resources h2, .upgrades h2, .achievements h2 {
+    margin-bottom: 15px;
+    color: #6B8E23; }
+  .resources .resource, .resources .upgrade, .upgrades .resource, .upgrades .upgrade, .achievements .resource, .achievements .upgrade {
+    background-color: #556B2F;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .resources .resource h2, .resources .resource p, .resources .upgrade h2, .resources .upgrade p, .upgrades .resource h2, .upgrades .resource p, .upgrades .upgrade h2, .upgrades .upgrade p, .achievements .resource h2, .achievements .resource p, .achievements .upgrade h2, .achievements .upgrade p {
+      margin: 0; }
+    .resources .resource .upgrade-count, .resources .upgrade .upgrade-count, .upgrades .resource .upgrade-count, .upgrades .upgrade .upgrade-count, .achievements .resource .upgrade-count, .achievements .upgrade .upgrade-count {
+      margin-left: 10px;
+      font-weight: normal;
+      color: white; }
+    .resources .resource button, .resources .upgrade button, .upgrades .resource button, .upgrades .upgrade button, .achievements .resource button, .achievements .upgrade button {
+      padding: 10px 15px;
+      background-color: #8B4513;
+      border: none;
+      border-radius: 5px;
+      color: #F5F5F5;
+      cursor: pointer;
+      transition: background-color 0.2s, transform 0.2s;
+      font-weight: bold; }
+      .resources .resource button:hover, .resources .upgrade button:hover, .upgrades .resource button:hover, .upgrades .upgrade button:hover, .achievements .resource button:hover, .achievements .upgrade button:hover {
+        background-color: #5e2f0d; }
+      .resources .resource button:disabled, .resources .upgrade button:disabled, .upgrades .resource button:disabled, .upgrades .upgrade button:disabled, .achievements .resource button:disabled, .achievements .upgrade button:disabled {
+        background-color: gray;
+        cursor: not-allowed; }
+      .resources .resource button.clicked, .resources .upgrade button.clicked, .upgrades .resource button.clicked, .upgrades .upgrade button.clicked, .achievements .resource button.clicked, .achievements .upgrade button.clicked {
+        background-color: #e17223;
+        transform: scale(0.95); }
+  .resources .achievements, .upgrades .achievements, .achievements .achievements {
+    background-color: #556B2F;
+    padding: 15px;
+    border-radius: 8px; }
+    .resources .achievements ul, .upgrades .achievements ul, .achievements .achievements ul {
+      list-style: none;
+      padding: 0; }
+      .resources .achievements ul li, .upgrades .achievements ul li, .achievements .achievements ul li {
+        margin-bottom: 10px;
+        font-size: 1em; }
+        .resources .achievements ul li.unlocked, .upgrades .achievements ul li.unlocked, .achievements .achievements ul li.unlocked {
+          color: #FFD700;
+          text-decoration: underline; }
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 0.9em;
+  color: white; }
+
+/*# sourceMappingURL=styles.css.map */
